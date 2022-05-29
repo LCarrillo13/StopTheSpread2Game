@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 35782d47a0106af49a11acc22bfb2130
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Steelr
+  fontNames:
+  - SciFi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 571087de1bdf26549b71c69a206fb94d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
