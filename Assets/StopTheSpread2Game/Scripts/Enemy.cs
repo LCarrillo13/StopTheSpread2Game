@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private PlayerController player;
 
+    //public KillCount killCount;
+
     public enum EnemyState
     {
         Idle,
@@ -89,6 +91,7 @@ private void Awake()
         gameObject.GetComponentInChildren<EnemyHealthBar>().Decrease();
         if(health <= 0)
         {
+            KillCount.instance.EnemyKilled();
             Die();
         }
     }

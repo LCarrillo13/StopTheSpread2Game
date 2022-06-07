@@ -25,6 +25,7 @@ public class Gun : MonoBehaviour
 
     // Paused
     public bool isPaused;
+    public bool isReloading;
     public GameObject pauseMenu;
 
 
@@ -40,9 +41,8 @@ public class Gun : MonoBehaviour
     void Update()
     {
         PauseCheck();
-        if(!isPaused)
+        if((!isPaused) && (!isReloading))
         {
-
 
             if(Input.GetMouseButtonDown(0))
             {
@@ -124,9 +124,12 @@ public class Gun : MonoBehaviour
 
     IEnumerator ReloadTime()
     {
+        isReloading = true;
         sourceGun.PlayOneShot(reload1);
         ammoText.text = "R";
         yield return new WaitForSeconds(1f);
+        
         Reload();
+        isReloading = false;
     }
 }
